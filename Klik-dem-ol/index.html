@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Klik dem al</title>
+</head>
+<body>
+	<style type="text/css">
+
+	.scores {
+      text-align: center;
+      font-size: 40px;
+    }
+
+    .scorePs {
+    	text-align: center;
+    	font-size: 20px;
+    }
+
+   	.click {
+   		text-align: center;
+   		/*opacity: 0.6;*/
+   		/*cursor: not-allowed;*/
+   	}
+
+   	.cookie{
+   		text-align: center;
+   		border-radius: 50%;
+   		padding: 32px 16px;
+   		background-color: brown;
+   	}
+
+	</style>
+	
+	
+	<div class="scores">
+		
+		<button id="cookie" class="cookie" onclick="Game.cookieClick()">Cookie!</button>
+		
+		<div id="vals" class="score"></div>
+		<div id="valsPs" class="scorePs"></div>
+		<br>
+		<div id="clickUp" class="score"></div>
+		<div id="clickers" class="score"></div>
+		<div id="grandmas" class="score"></div>
+		<div id="farms" class="score"></div>
+		<div id="mines" class="score"></div>
+		<div id="factorys" class="score"></div>
+	
+		<button id="upgradeClick" class="click" onclick="Game.handleBuy.upgradeClick()">Upgrade Your Click!<br>Cost: 10
+		</button>
+		<button id="clicker" class="click" onclick="Game.handleBuy.buyClicker()">Buy Clicker!<br>Cost: 10
+		</button>
+		<button id="grandma" class="click" onclick="Game.handleBuy.buyGrandma()">Buy Grandma!<br>Cost: 500
+		</button>
+		<button id="farm" class="click" onclick="Game.handleBuy.buyFarm()">Buy Farm!<br>Cost: 2000
+		</button>
+		<button id="mine" class="click" onclick="Game.handleBuy.buyMine()">Buy Mine!<br>Cost: 5000
+		</button>
+		<button id="factory" class="click" onclick="Game.handleBuy.buyFactory()">Buy Factory!<br>Cost: 10000
+		</button>
+
+	</div>
+
+	<div class="scores">
+		
+		<button id="save" class="click" onclick="savePlayer()">Save!</button>
+		<button id="load" class="click" onclick="loadPlayer()">Load!</button>
+	
+	</div>
+
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
