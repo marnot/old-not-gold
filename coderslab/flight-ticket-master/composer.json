@@ -1,0 +1,8 @@
+{
+    "name": "root/flights",
+    "require": {
+        "mpdf/mpdf": "^6.1",
+        "kwn/number-to-words": "^1.3",
+        "fzaninotto/faker": "^1.6"
+    }
+}
