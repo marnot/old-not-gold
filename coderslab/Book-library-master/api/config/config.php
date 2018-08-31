@@ -2,9 +2,9 @@
 
 include_once  ('../src/Book.php');
 
-$host = "localhost";
-$username = "root";
-$password = "coderslab";
+$host = "";
+$username = "";
+$password = "";
 $db = "books";
 $conn = new mysqli($host, $username, $password, $db);
 if ($conn->connect_error) {
